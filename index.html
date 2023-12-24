@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!--+++  favicon   ++++-->
+    <link rel="icon" href="https://routeacademy.github.io/Bookmarker/images/bookmark.png">
+    <!--+++  foooooooonts   ++++-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+
+         <!--+++  sweetalert2   ++++-->
+    <link rel="stylesheet" href="css/sweetalert2.min.css"> 
+
+    <!--+++  fontawesome   ++++-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--+++   bootstrap  ++++-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--+++   main style sheet ++++-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container py-5">
+        <h1 class="text-center">Bookmarker </h1>
+        <div class="caption my-5 pt-4">
+            <div class="title d-flex align-items-center justify-content-center ">
+                
+                <h2 class="text-center mx-auto "><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+                
+            </div>
+            <div class="form-group position-relative">
+                <label class="mb-2 text-light" for="siteName"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+                <input  class="form-control mb-3" id="siteName" type="text" placeholder="Bookmark Name" />
+            <span id="checkNameRight"></span>
+            </div>
+            <div class="form-group position-relative">
+                <label class="mb-2 text-light" for="webSite"><i class="fa-solid fa-link"></i> Site URL</label>
+                <input  class="form-control mb-3 " id="webSite" type="text" placeholder="Website URL" />
+                <span id="checkSiteRight"></span>
+            </div>
+
+            
+<div class="d-flex flex-column justify-content-center align-items-center">
+             <button id="submit" class="btn btn-outline-dark mb-3 px-5 fs-5">Submit</button>
+</div>
+        </div>
+<div class="table-responsive">
+    <table class="table text-center table-hover">
+        <thead class="fs-5">
+            <th>Index </th>
+            <th>Website Name</th>
+            <th>Visit </th>
+            <th>Delete </th>
+        </thead>
+        <tbody id="myRow">
+
+        </tbody>
+    </table>
+</div>
+    </div>
+
+
+
+
+
+
+
+   <script src="js/sweetalert.min.js"></script>
+   <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

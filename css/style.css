@@ -1,0 +1,127 @@
+/*============global============*/
+body{
+   
+    background: url(https://t3.ftcdn.net/jpg/02/95/62/92/240_F_295629217_rKcta5QPVw8LaCRk9FTtRc1cQTcISk59.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+:root{
+    --primary-color:rgb(219, 5, 251);
+
+    }
+::selection{
+    background-color: var(--primary-color);
+    color: rgb(218, 115, 115);
+}
+
+h1{
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    font-size: 3.125rem;
+    max-width: fit-content;
+    margin: auto;
+    color: white;
+    animation: h1 infinite 3s alternate;
+}
+@keyframes h1 {
+    0%{ color: white; 
+    }
+    100%{
+        color: black;  letter-spacing: 4px;  
+    }}
+h1::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    animation: line 3s infinite alternate;
+}
+@keyframes line {
+    0%{ 
+    }
+    100%{
+        height:100%;
+    }
+}
+
+h2{
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+  background-image: linear-gradient(to right, #f5f2f1, #fcb605);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* max-width: fit-content; */
+
+
+}
+.title i{
+    font-size: 25px;
+    margin: 0 15px;
+    background-color: inherit;
+}
+
+label{
+font-family: 'PT Sans Caption', sans-serif;
+font-weight: 600;
+font-size: 16px;
+}
+.container .caption  .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0.5rem 0.25rem var(--primary-color);
+}
+.container .caption{
+    border-top: dotted;
+    border-bottom: dotted;
+    border-color: rgb(251, 247, 5);
+}
+
+.form-group span{
+    position: absolute;
+    bottom:5px;
+    right: 15px;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+color: red;
+}
+
+.form-control{
+    background-color:rgba(243, 6, 251, 0.119);
+    color: white;
+}
+.form-control:focus{
+    background-color:rgba(251, 239, 6, 0.119);
+    color: white;
+}
+input::placeholder{
+   color: white!important;
+   opacity: 1;
+}
+.table>:not(caption)>*>*{
+    background-color: rgba(243, 6, 251, 0.137);
+    color: white;
+}
+input{
+    cursor: pointer;
+}
+.igreen{
+    color: green;
+}  
+div:where(.swal2-container) div:where(.swal2-popup){
+    background-color: black!important;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
+    background-color: rgb(243, 6, 251) !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus{
+    box-shadow:  0 0 3px 3px rgba(241, 229, 2, 0.56) !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-default-outline:focus{
+    box-shadow:  0 0 3px 3px rgba(241, 229, 2, 0.56) !important;
+
+}
